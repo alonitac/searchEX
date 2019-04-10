@@ -74,6 +74,11 @@ Consider the following tree:
 
 Best-first will return D while DFS will return C.
 
+
+**but isn't Best-First about the heuristics value? And also how we usually draw trees DFS would return D as well? Book: (For example, as Exercise 3.21 shows,
+best-first tree search includes depth-first search as a special case.) I would answer: Yes, depth-first is a special case of best-first, if the successor nodes were already ordered with increasing heuristics value (lowest at the front).**
+
+
 ### c
 
 Yes. When  $$\forall n, h(n)=0$$, A* is UCS by definition. 
@@ -115,6 +120,9 @@ We define states space by  {$$(V_1, V_2)$$ | $$V_1,V_2$$ disjoint sets, and thei
 ### c
 
 Since the minimization expression in (a) is not convex (it's easy to reduce the above problem to np problem learned in Algo), gradient ascent would not guarantee to find an optimal solution while simulated annealing   may find a better solution thanks to it's random feature.
+
+**I thought we can say that simulated annealing WILL find the optimal solution, because of the random feature and that the randomness decreases.
+Book: "If the schedule lowers T slowly enough, the algorithm will find a global optimum with probability approaching 1." **
 
  ### d
 
